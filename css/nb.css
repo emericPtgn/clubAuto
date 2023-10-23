@@ -37,9 +37,6 @@ body p {
 
 /* -- HEADER -- */
 
-header {
-    background-color: #232628;
-}
 header p {
     font-family: "Montserrat";
     color: var(--white);
@@ -89,7 +86,7 @@ header div:first-child > div:nth-child(5) {
 }
 .bottom-bar {
     position: fixed;
-    z-index: 10;
+    z-index: 2;
     bottom: 0%;
     width: 100%;
 }
@@ -97,13 +94,14 @@ header div:first-child > div:nth-child(5) {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--grey);
+    background-color: rgba(255, 255, 255);
     box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2) ;
     list-style: none;
     margin: 0;
     padding: 0;
     height: 50px;
     width: auto;
+    z-index: 10000;
 } 
 .bottom-bar-link {
     display: flex;
@@ -120,6 +118,7 @@ header div:first-child > div:nth-child(5) {
     display: flex;
 }
 .top-header-grid-container {
+    background-color: var(--black) ;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto);
@@ -406,6 +405,7 @@ footer > p:nth-of-type(1) {
 
 /* ---- PAGE CONTACT ---- */
 
+
 .contact-form {
     display: grid;
     grid-template-columns: 1fr;
@@ -466,10 +466,12 @@ footer > p:nth-of-type(1) {
     margin-top: 50px;
 }
 .container-main-image {
+    background-image: url(/images/vehicule3.jpg);
+    background-size: cover;
     height: 300px;
     width: 100%;
     overflow: hidden;
-    z-index: 0;
+    z-index: 3;
     position: relative;
 }
 .main-image {
@@ -482,11 +484,13 @@ footer > p:nth-of-type(1) {
 
 .tblack-layer {
     position: relative;
-    display: inline-block;
+    background-image: url(/images/vente-location.jpg);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
 }
 .tblack-layer::before {
     content: "";
-    color: white;
     font-family: "Montserrat";
     font-weight: bold;
     position: absolute;
@@ -514,6 +518,10 @@ footer > p:nth-of-type(1) {
 }
 .vente-location span {
     color: var(--white);
+    font-size: 12px;
+}
+.description-catalogue > p:nth-of-type(2) {
+    color:#232628;
 }
 .vente-location {
     display: grid;
@@ -526,9 +534,6 @@ footer > p:nth-of-type(1) {
     ;
     gap: 30px;
     margin: 0 5%;
-    position: relative;
-    top: -50px;
-    z-index: 3;
 }
 
 .tri.filtre > p {
@@ -539,6 +544,7 @@ footer > p:nth-of-type(1) {
 }
 .tri.filtre {
     width: fit-content;
+    padding: 10px;
 }
 .left-col {
     grid-area: left-col;
@@ -555,40 +561,40 @@ footer > p:nth-of-type(1) {
 .modele-left-col {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas:
-    " .img-catalogue "
-    " .description-catalogue "
+    " img-catalogue "
+    " description-catalogue "
+    " description-catalogue "
     ;
     margin-top: 10%;
     padding-bottom: 10%;
     border-bottom: solid 1pt rgb(222, 222, 222);
+    position: relative;
 }
 .img-catalogue {
     grid-area: img-catalogue ;
-    position: relative;
     width: 100%;
     height: auto;
+    position: static;
 
 }
 .description-catalogue {
     grid-area: description-catalogue;
+    position: static;
 }
-.description-catalogue > p:nth-of-type(2) {
-    color:#232628;
-}
+
 .tarif-catalogue {
-    grid-area: tarif-catalogue;
     position: absolute;
     right: 0;
-    bottom: 7px;
+    top: 46.3%;
     z-index: 1;
     color: var(--white);
     font-weight: bold;
     background-color: #6C98E1;
     font-family: "Montserrat";
     font-size: 12px;
-    padding: 10px 15px 15px 40px;
+    padding: 5px 15px 5px 40px;
     margin: 0;
 }
 
@@ -596,8 +602,13 @@ footer > p:nth-of-type(1) {
 
 .right-col {
     grid-area: right-col;
+    background-color: var(--white);
     width: 100%;
     padding: 0;
+    position: static;
+    z-index: 1;
+    position: relative;
+    top: -50px;
     
 }
 .search-form {
@@ -792,7 +803,7 @@ footer > p:nth-of-type(1) {
     }
     .bottom-bar-links {
         justify-content: end;
-        background-color: rgba(255, 255, 255, 0.646);
+        background-color: rgba(255, 255, 255, 0.673);
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) ;
         padding: 0 8%;
     } 
@@ -955,6 +966,82 @@ footer > p:nth-of-type(1) {
     #copy {
         margin-top: 2%;
         text-align: center;
+    }
+    /* PAGE LOCATION */
+
+    .vente-location {
+        display: grid;
+        grid-template-columns: auto 20%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "tri right-col"
+        "left-col right-col";
+        position: relative;
+        z-index: 3;
+    }
+    .left-col {
+        grid-area: left-col;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        margin: 0 0 10%;
+        border-top: solid 1pt rgb(222, 222, 222);
+        width: fit-content;
+    }
+    .modele-left-col {
+        display: grid;
+        grid-template-columns: 30% auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        " img-catalogue description-catalogue tarif-catalogue"
+        " img-catalogue description-catalogue ."
+        ;
+        column-gap: 50px;
+        margin-top: 0;
+        padding: 50px 0;
+        border-bottom: solid 1pt rgb(222, 222, 222);
+        width: 100%;
+        position: relative;
+    }
+    .img-catalogue {
+        grid-area: img-catalogue ;
+        position:static;
+        width: 100%;
+        height: auto;
+    
+    }
+    .description-catalogue {
+        grid-area: description-catalogue;
+        position: relative;
+        width: fit-content;
+    }
+    .description-catalogue > p:nth-of-type(2) {
+        color:#232628;
+    }
+    .tarif-catalogue {
+        grid-area: tarif-catalogue;
+        position: relative;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        color: var(--white);
+        font-weight: bold;
+        background-color: #6C98E1;
+        font-family: "Montserrat";
+        font-size: 12px;
+        padding: 10px 15px 15px 40px;
+        margin: 0;
+        height: fit-content;
+    }
+    .vente-location h5 {
+        margin: 0;
+    }
+    .tblack-layer {
+        background-size: cover;
+        background-position: center;
+    }
+    .tri.filtre {
+        margin: 1em 0 0;
     }
 }
 
