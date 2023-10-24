@@ -535,9 +535,6 @@ footer > p:nth-of-type(1) {
     width: 100%;
 }
 
-.modele-left-col {
-
-}
 .img-catalogue {
     width: 100%;
     object-fit: cover;
@@ -887,8 +884,6 @@ footer > p:nth-of-type(1) {
         border-bottom: 2pt solid grey;
         margin: 0 10%;
         padding: 2% 0;
-    }
-    .main-footer h5 {
     }
     #copy {
         margin-top: 2%;
