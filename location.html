@@ -16,26 +16,26 @@
                 <div> 
                     <p id="logo">CLUB AUTO</p>
                 </div>
-                <div class="icone-header">
+                <div id="adress-header" class="hide-mobile">
                     <img src="/projet/clubAuto/images/icone-adresse.png">
-                    <div class="info-header">
-                        <p><span>ADRESSE :</span></p>
+                    <div>
+                        <p><span class="titre-header">ADRESSE :</span></p>
                         <p>AVENUE CHARLES DE GAULLE</p>
                         <p>75000 PARIS</p>
                     </div>
                 </div>
                 <div class="icone-header">
                     <img src="/projet/clubAuto/images/icon-telephone.png">
-                    <div class="info-header">
-                        <p><span>TÉLÉPHONE :</span></p>
-                        <p>01 23 45 67 89</p>
+                    <div>
+                        <p><span class="titre-header">TÉLÉPHONE :</span></p>
+                        <p class="special-bold-header">01 23 45 67 89</p>
                     </div>
                 </div>
-                <div class="info-header">
-                    <p><span>OUVERTURE :</span> Du Lundi au Samedi</p>
-                    <p><span>HORAIRES :</span> De 9h à 17h</p>
+                <div id="block" class="hide-mobile">
+                    <p class="special-bold-header"><span class="titre-header">OUVERTURE :</span> Du Lundi au Samedi</p>
+                    <p class="special-bold-header"><span class="titre-header">HORAIRES :</span> De 9h à 17h</p>
                 </div>
-                <div>
+                <div class="hide-mobile">
                     <img src="/projet/clubAuto/images/facebook.png">
                     <img src="/projet/clubAuto/images/twitter.png">
                 </div>
@@ -62,8 +62,8 @@
                     <div class="modele-left-col">
                         <img class="img-catalogue" src="/projet/clubAuto/images/vehicule2.jpg">
                         <div class="description-catalogue">
-                            <p class="tarif-catalogue"><span>20€/jour</span></p>
-                            <h5>BMW 535i, Navi, Leather, ABS</h5>
+                            <p class="tarif-catalogue product-price"><span>20€/jour</span></p>
+                            <p class="modele-catalogue">BMW 535i, Navi, Leather, ABS</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic amet quas sunt, ipsum nesciunt facere dicta quaerat voluptates optio reprehenderit tempora animi praesentium aliquid quae odio voluptate vitae iusto.</p>
                             <p><a href="vehicule-details.html"> >> En savoir plus << </a></p>
                         </div>
@@ -73,8 +73,8 @@
                     <div class="modele-left-col">
                         <img class="img-catalogue" src="/projet/clubAuto/images/vehicule2.jpg">
                         <div class="description-catalogue">
-                            <p class="tarif-catalogue"><span>20€/jour</span></p>
-                            <h5>BMW 535i, Navi, Leather, ABS</h5>
+                            <p class="tarif-catalogue product-price"><span>20€/jour</span></p>
+                            <p class="modele-catalogue">BMW 535i, Navi, Leather, ABS</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic amet quas sunt, ipsum nesciunt facere dicta quaerat voluptates optio reprehenderit tempora animi praesentium aliquid quae odio voluptate vitae iusto.</p>
                             <p><a href="vehicule-details.html"> >> En savoir plus << </a></p>
                         </div>
@@ -84,8 +84,8 @@
                     <div class="modele-left-col">
                         <img class="img-catalogue" src="/projet/clubAuto/images/vehicule2.jpg">
                         <div class="description-catalogue">
-                            <p class="tarif-catalogue"><span>20€/jour</span></p>
-                            <h5>BMW 535i, Navi, Leather, ABS</h5>
+                            <p class="tarif-catalogue product-price"><span>20€/jour</span></p>
+                            <p class="modele-catalogue">BMW 535i, Navi, Leather, ABS</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic amet quas sunt, ipsum nesciunt facere dicta quaerat voluptates optio reprehenderit tempora animi praesentium aliquid quae odio voluptate vitae iusto.</p>
                             <p><a href="vehicule-details.html"> >> En savoir plus << </a></p>
                         </div>
@@ -95,8 +95,8 @@
                     <div class="modele-left-col">
                         <img class="img-catalogue" src="/projet/clubAuto/images/vehicule2.jpg">
                         <div class="description-catalogue">
-                            <p class="tarif-catalogue"><span>20€/jour</span></p>
-                            <h5>BMW 535i, Navi, Leather, ABS</h5>
+                            <p class="tarif-catalogue product-price"><span>20€/jour</span></p>
+                            <p class="modele-catalogue">BMW 535i, Navi, Leather, ABS</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic amet quas sunt, ipsum nesciunt facere dicta quaerat voluptates optio reprehenderit tempora animi praesentium aliquid quae odio voluptate vitae iusto.</p>
                             <p><a href="vehicule-details.html"> >> En savoir plus << </a></p>
                         </div>
@@ -158,16 +158,16 @@
         <footer>
             <div class="main-footer">
                 <div>
-                    <h6><span>CLUB</span> AUTO</h6>
+                    <h5><span>CLUB</span> AUTO</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis recusandae temporibus, nisi quo consectetur! </p>
                 </div>
                 <div>
-                    <h6>HORAIRE D'OUVERTURE</h6>
+                    <h5>HORAIRE D'OUVERTURE</h5>
                     <p>lundi - Samedi : <span>09:00 - 17:00</span></p>
                     <p>Dimanche et jours fériés : <span>Fermé</span></p>
                 </div>
                 <div>
-                    <h6>NEWSLETTER</h6>
+                    <h5>NEWSLETTER</h5>
                     <form class="input-icone">
                         <input type="email" class="nl-form" placeholder="Entrez votre email" />
                         <img src="/projet/clubAuto/images/rss.png" class="nl-icone" alt="icone submit">
@@ -175,7 +175,7 @@
                     <p>Inscrivez-vous pour recevoir les dernières offres</p>
                 </div>
                 <div>
-                    <h6>RESEAUX SOCIAUX</h6>
+                    <h5>RESEAUX SOCIAUX</h5>
                     <img src="/projet/clubAuto/images/facebook.png">
                     <img src="/projet/clubAuto/images/twitter.png">
                     <img src="/projet/clubAuto/images/instagram-2.png">

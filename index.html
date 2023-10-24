@@ -13,29 +13,29 @@
     <body>
         <header>
             <div class="top-header-grid-container">
-                <div> 
+                <div class="hide-mobile"> 
                     <p id="logo">CLUB AUTO</p>
                 </div>
-                <div class="icone-header">
+                <div id="adress-header" class="hide-mobile">
                     <img src="/projet/clubAuto/images/icone-adresse.png">
-                    <div class="info-header">
-                        <p><span>ADRESSE :</span></p>
+                    <div>
+                        <p><span class="titre-header">ADRESSE :</span></p>
                         <p>AVENUE CHARLES DE GAULLE</p>
                         <p>75000 PARIS</p>
                     </div>
                 </div>
                 <div class="icone-header">
                     <img src="/projet/clubAuto/images/icon-telephone.png">
-                    <div class="info-header">
-                        <p><span>TÉLÉPHONE :</span></p>
-                        <p>01 23 45 67 89</p>
+                    <div>
+                        <p><span class="titre-header">TÉLÉPHONE :</span></p>
+                        <p class="special-bold-header">01 23 45 67 89</p>
                     </div>
                 </div>
-                <div class="info-header">
-                    <p><span>OUVERTURE :</span> Du Lundi au Samedi</p>
-                    <p><span>HORAIRES :</span> De 9h à 17h</p>
+                <div id="block" class="hide-mobile">
+                    <p class="special-bold-header"><span class="titre-header">OUVERTURE :</span> Du Lundi au Samedi</p>
+                    <p class="special-bold-header"><span class="titre-header">HORAIRES :</span> De 9h à 17h</p>
                 </div>
-                <div>
+                <div class="hide-mobile">
                     <img src="/projet/clubAuto/images/facebook.png">
                     <img src="/projet/clubAuto/images/twitter.png">
                 </div>
@@ -58,13 +58,13 @@
                     <img src="/projet/clubAuto/images/clients.jpg">
                     <div>
                         <h3>BIENVENUE CHEZ <span>CLUB AUTO</span></h3>
-                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. At iure voluptate veritatis iusto. Temporibus libero magnam illo distinctio.</h5>
+                        <p class="special-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. At iure voluptate veritatis iusto. Temporibus libero magnam illo distinctio.</p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, tempora ipsam! Magni sequi dicta harum ut ex adipisci? Dolore dolor laborum temporibus id nulla! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, tempora ipsam! Magni sequi dicta harum ut ex adipisci? Dolore dolor laborum temporibus id nulla! Tempora molestias omnis recusandae dolores nam?</p>
                     </div>
                     <div>
                         <h3>LE MEILLEUR DE L'AUTOMOBILE</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta blanditiis reiciendis error excepturi eos mollitia nostrum repellendus doloremque tempore.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, tempora ipsam! Magni sequi dicta harum ut ex adipisci? Dolore dolor laborum temporibus id nulla! Tempora molestias omnis recusandae dolores nam?</p>
-                        <ul>
+                        <p class="grey-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta blanditiis reiciendis error excepturi eos mollitia nostrum repellendus doloremque tempore.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, tempora ipsam! Magni sequi dicta harum ut ex adipisci? Dolore dolor laborum temporibus id nulla! Tempora molestias omnis recusandae dolores nam?</p>
+                        <ul class="no-indent">
                             <li>Lorem ipsum dolor sit amet.</li>
                             <li>Lorem ipsum dolor sit amet.</li>
                             <li>Lorem ipsum dolor sit amet.</li>
@@ -96,12 +96,8 @@
                         <img src="/projet/clubAuto/images/vehicule2.jpg">
                         <div class="bg-txt-three-cols">
                             <div class="txt-three-cols special-font">
-                                <div class="product-name">
-                                    <p>BMW 535I, NAVI, LEATHER, ABS</p>
-                                </div>
-                                <div class="product-price">
-                                    <p>5 500€</p>
-                                </div>
+                                <p class="product-name">BMW 328I, SPORT LINE BODY KIT</p>
+                                <p class="product-price">5 500€</p>
                             </div>
                         </div>
                     </div>
@@ -109,12 +105,8 @@
                         <img src="/projet/clubAuto/images/vehicule2.jpg">
                         <div class="bg-txt-three-cols">
                             <div class="txt-three-cols special-font">
-                                <div class="product-name">
-                                    <p>BMW 328I, SPORT LINE BODY KIT</p>
-                                </div>
-                                <div class="product-price">
-                                    <p>5 500€</p>
-                                </div>
+                                <p class="product-name">BMW 328I, SPORT LINE BODY KIT</p>
+                                <p class="product-price">5 500€</p>
                             </div>
                         </div>
                     </div>
@@ -122,13 +114,8 @@
                         <img src="/projet/clubAuto/images/vehicule2.jpg">
                         <div class="bg-txt-three-cols">
                             <div class="txt-three-cols special-font">
-                                <div class="product-name">
-                                    <p>FORD EXPLORER 2015 4WD</p>
-                                </div>
-                                <div class="product-price">
-                                    <p id="prix-barre">9 000€</p>
-                                    <p>5 500€</p>
-                                </div>
+                                <p class="product-name">BMW 328I, SPORT LINE BODY KIT</p>
+                                <p class="product-price">5 500€</p>
                             </div>
                         </div>
                     </div>
@@ -142,14 +129,14 @@
                             <img class="image-reassurance" src="/projet/clubAuto/images/icon1.png">
                             <div class="texte-reassurance">
                                 <h4>FINANCEMENT</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere reiciendis sed ullam quaerat deserunt?</p>
+                                <p class="grey-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere reiciendis sed ullam quaerat deserunt?</p>
                             </div>
                         </div>
                         <div class="icone-reassurance">
                             <img class="image-reassurance" src="/projet/clubAuto/images/icon2.png">
                             <div class="texte-reassurance">
                                 <h4>RÉACTIVITÉ DE L'ÉQUIPE TECHNIQUE</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere reiciendis sed ullam quaerat deserunt ?</p>
+                                <p class="grey-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere reiciendis sed ullam quaerat deserunt ?</p>
                             </div>
                         </div>
                     </div>
@@ -158,19 +145,19 @@
                             <img class="image-reassurance" src="/projet/clubAuto/images/icon3.png">
                             <div class="texte-reassurance">
                                 <h4>À L'ÉCOUTE DE NOTRE CLIENTÈLE</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere reiciendis sed ullam quaerat deserunt ?</p>
+                                <p class="grey-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere reiciendis sed ullam quaerat deserunt ?</p>
                             </div>
                         </div>
                         <div class="icone-reassurance">
                             <img class="image-reassurance" src="/projet/clubAuto/images/icon4.png">
                             <div class="texte-reassurance">
                                 <h4>SERVICE & MAINTENANCE</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere reiciendis sed ullam quaerat deserunt ?</p>
+                                <p class="grey-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti facere reiciendis sed ullam quaerat deserunt ?</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button>CONTACTEZ NOUS</button>
+                <button type="button" class="button"><a href="contact.html">CONTACTEZ NOUS</a></button>
             </section>
             <div class="bloc-vente-et-location">
                 <div class="txt-vente-et-location">
@@ -182,24 +169,24 @@
         <footer>
             <div class="main-footer">
                 <div>
-                    <h6><span>CLUB</span> AUTO</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis recusandae temporibus, nisi quo consectetur! </p>
+                    <h5><span>CLUB</span> AUTO</h5>
+                    <p class="grey-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis recusandae temporibus, nisi quo consectetur! </p>
                 </div>
                 <div>
-                    <h6>HORAIRE D'OUVERTURE</h6>
-                    <p>lundi - Samedi : <span>09:00 - 17:00</span></p>
-                    <p>Dimanche et jours fériés : <span>Fermé</span></p>
+                    <h5>HORAIRE D'OUVERTURE</h5>
+                    <p class="grey-color">lundi - Samedi : <span>09:00 - 17:00</span></p>
+                    <p class="grey-color">Dimanche et jours fériés : <span>Fermé</span></p>
                 </div>
                 <div>
-                    <h6>NEWSLETTER</h6>
+                    <h5>NEWSLETTER</h5>
                     <form class="input-icone">
                         <input type="email" class="nl-form" placeholder="Entrez votre email" />
                         <img src="/projet/clubAuto/images/rss.png" class="nl-icone" alt="icone submit">
                     </form>
-                    <p>Inscrivez-vous pour recevoir les dernières offres</p>
+                    <p class="grey-color">Inscrivez-vous pour recevoir les dernières offres</p>
                 </div>
                 <div>
-                    <h6>RESEAUX SOCIAUX</h6>
+                    <h5>RESEAUX SOCIAUX</h5>
                     <img src="/projet/clubAuto/images/facebook.png">
                     <img src="/projet/clubAuto/images/twitter.png">
                     <img src="/projet/clubAuto/images/instagram-2.png">
@@ -207,7 +194,7 @@
                     <img src="/projet/clubAuto/images/youtube.png">
                 </div>
             </div>
-            <p id="copy">Copyright &copy; Club Auto - Tous droits réservés</p>
+            <p id="copy" class="grey-color">Copyright &copy; Club Auto - Tous droits réservés</p>
         </footer><!--Ici se termine le #mainFooter-->
     </body>
 </html>

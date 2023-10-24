@@ -20,73 +20,112 @@
 body h1,h2,h3,h4,h5,h6 {
     font-family: "Montserrat";
 }
-
+body h1 {
+    font-size: 2rem;
+}
+body h2 {
+    font-size: 1.5rem;
+}
 body h3 {
-    font-size: 0.9em;
+    font-size: 1.2rem;
+}
+body h4 {
+    font-size: 0.6rem;
+}
+body h5, h6 {
+    font-size: 0.5rem;
 }
 
 body p, li, a {
     font-family: "Open Sans";
+    font-size: 0.5rem;
 }
 body p {
-    font-size: 0.5em;
-    line-height: 1.4em;
+    font-size: 0.5rem;
+    line-height: 0.8rem;
 }
-
-/* ----- STYLES DE TEXTES ----- */
+.titre-header {
+    font-family: "Montserrat";
+    font-size: 8px;
+    font-weight: bold;
+    color: var(--orange);
+}
+.special-bold-header {
+    font-weight: bold;
+    font-size: 12px;
+}
+p.special-bold {
+    font-weight: bold;
+    font-size: 10px;
+}
+p.grey-color {
+    color: grey;
+}
+p.modele-catalogue {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: bold;
+}
+.product-name, .product-price {
+    font-family: "Montserrat";
+    font-size: 12px;
+}
+.tarif-catalogue.product-price {
+    color: white;
+}
+.no-indent {
+    padding-left: 17px;
+    line-height: 20px;
+}
+.no-indent > li {
+    padding-left: 20px;
+}
+a {
+    text-decoration: none;
+    color:#333537 ;
+}
+button, label, ::placeholder {
+    font-size: 8px;
+}
+.button {
+    font-family: "Montserrat";
+    font-weight: bold;
+    background-color: #6C98E1;
+    border: none;
+    max-width: fit-content;
+    border-radius:4%;
+    color: var(--white);
+    margin: 0 auto 50px;
+    padding: 15px 40px;
+}
+.button a {
+    color: white;
+}
 
 /* -- HEADER -- */
 
 header p {
     font-family: "Montserrat";
     color: var(--white);
-    font-size: 0.5em;
     margin:0;
 }
-header span {
-    font-family: "Montserrat";
-    font-size: 8px;
-    font-weight: bold;
-    color: var(--orange);
-}
 header #logo {
-    font-family: "Montserrat";
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--white);
-}
-.icone-header:nth-child(3)> .info-header > p {
-    margin: 0;
-    line-height: 12px;
-}
-.icone-header:nth-child(3)> .info-header > p:nth-child(2) {
-    font-weight: bold;
-    font-size: 0.8em;
-}
-
-.top-header-grid-container > .info-header p {
-    font-weight: bold;
+    margin-bottom: 40px;
 }
 header img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
 }
-header #logo {
-    display: none;
-}
-header div:first-child > div:nth-child(2) {
-    display: none;
-}
-header div:first-child > div:nth-child(4) {
-    display: none;
-}
-header div:first-child > div:nth-child(5) {
+.hide-mobile {
     display: none;
 }
 .bottom-bar {
     position: fixed;
-    z-index: 2;
+    z-index: 10000;
     bottom: 0%;
     width: 100%;
 }
@@ -101,19 +140,13 @@ header div:first-child > div:nth-child(5) {
     padding: 0;
     height: 50px;
     width: auto;
-    z-index: 10000;
 } 
 .bottom-bar-link {
     display: flex;
     font-family: "Montserrat";
-    font-size: 8px;
     font-weight: bold;
 }
 
-.bottom-bar-link a {
-    text-decoration: none;
-    color: initial;
-}
 .icone-header {
     display: flex;
 }
@@ -129,7 +162,6 @@ header div:first-child > div:nth-child(5) {
 
 #main-title {
     background-color: #232628;
-    font-size: 1.4em;
     margin: 0;
     color: white;
     padding: 2% 7%;
@@ -138,35 +170,23 @@ header div:first-child > div:nth-child(5) {
 #main-title span {
     color: var(--orange);
 }
-.flex-two-cols h3 {
-    font-size: 1.2em;
-}
 .flex-two-cols span {
     color: var(--orange);
 }
 .flex-two-cols h5 {
-    font-size: O.6em;
     line-height: 1.5em;
 }
 .flex-two-cols p {
-    font-size: 0.6em;
     line-height: 1.6em;
 }
-.flex-two-cols p:nth-child(2) {
-    padding-top: 2em;
-    border-top: 2pt grey solid;
-    color: grey;
-}
+
 .flex-two-cols ul {
     list-style: none;
     list-style-image: url(/projet/clubAuto/images/verifier.png);
     padding-bottom: 10%;
 }
 .flex-two-cols li {
-    font-size: 9px;
     font-weight: 300;
-    line-height: 2em;
-    padding-left: 15px;
 }
 .flex-two-cols img {
     width: 100%;
@@ -241,51 +261,30 @@ header div:first-child > div:nth-child(5) {
     color: var(--white);
     font-weight: bold;
 }
-.txt-three-cols.special-font p {
-    font-family: "Montserrat";
-    font-size: 12px;
-}
+
 .product-name {
     order: 1;
+    font-size: 12px;
 }
 .product-price {
     order: 0;
-    margin-left: 1em;
+    margin: 0 0 0 1em;
     background-color: #6C98E1;
     padding: 0.5em 0.7em 0.5em 0.3em;
     width: fit-content;
+    font-weight: bold;
+    font-size: 12px;
 }
-.product-price p {
-    margin: 0;
-}
+
 /* -- BLOC POURQUOI NOUS CHOISIR ? -- */
 
 .reassurance h3 {
     text-align: center;
 }
 .reassurance h4 {
-    font-size: 0.5em;
     margin-top: 0;
 }
-.reassurance div p {
-    line-height: 12px;
-    font-weight: normal;
-    color: grey;
-}
-.reassurance button {
-    font-family: "Montserrat";
-    font-size: 8px;
-    font-weight: bold;
-    background-color: #6C98E1;
-    border: none;
-    max-width: fit-content;
-    border-radius:4%;
-    color: var(--white);
-    text-align: center;
-    align-self: center;
-    margin: 0 auto 50px;
-    padding: 15px 40px;
-}
+
 .reassurance {
     display: grid;
     grid-template-columns: 1fr;
@@ -335,14 +334,13 @@ header div:first-child > div:nth-child(5) {
 }
 
 /* -- FOOTER -- */
-footer h6 {
+footer h5 {
     margin: 0;
     padding-top: 10%;
     color: var(--white);
 }
 footer p {
     color: grey;
-    font-size: 8px;
     line-height: 12px;
 }
 footer div:first-child span {
@@ -368,7 +366,6 @@ footer .nl-form {
     flex: 1;
     margin-top: 15px;
     max-width: 85%;
-    font-size: 9px;
     padding: 2%;
     font-family: "Open Sans";
 }
@@ -407,48 +404,32 @@ footer > p:nth-of-type(1) {
 
 
 .contact-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px; 
-    margin: 0 20px 130px;
+    display: flex;
+    flex-direction: column;
     padding: 0 30px;
+    margin: 3% 3% 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: var(--white);
     position: relative;
-    z-index: 1;
-    top: 100px;
-}
-.contact-form h2 {
-    font-size: 14px;
+    top: -200px;
+    margin-bottom: -150px;
+    z-index: 0;
 }
 .contact-form form {
     display: grid;
     grid-template-columns: 1fr; 
     grid-template-rows: repeat(3, auto);
 }
-.contact-form form button {
-    margin: 20px 0;
-    width: fit-content;
-    font-family: "Montserrat";
-    font-size: 8px;
-    font-weight: bold;
-    background-color: #6C98E1;
-    border: none;
-    max-width: fit-content;
-    border-radius:4%;
-    color: var(--white);
-    text-align: center;
-    align-self: center;
-    padding: 15px 40px;
-    }
 .contact-form form ::placeholder {
     font-family: "Open Sans";
-    font-size: 8px;
-    padding: 20px 0 20px 20px;
+    padding: 20px;
 }
+.contact-form form input {
+    padding: 10px;
+}
+
 .contact-form label {
     font-family: "Montserrat";
-    font-size: 8px;
 }
 .contact-form input, .contact-form textarea {
     background-color: rgb(233, 236, 241);
@@ -471,7 +452,7 @@ footer > p:nth-of-type(1) {
     height: 300px;
     width: 100%;
     overflow: hidden;
-    z-index: 3;
+    z-index: 0;
     position: relative;
 }
 .main-image {
@@ -504,7 +485,6 @@ footer > p:nth-of-type(1) {
     position: absolute;
     margin: 0;
     color: var(--white);
-    font-size: 22px;
     top: 40%;
     z-index: 2;
     padding-left: 5%;
@@ -516,10 +496,7 @@ footer > p:nth-of-type(1) {
     line-height:15px;
     color: rgb(89, 87, 87);
 }
-.vente-location span {
-    color: var(--white);
-    font-size: 12px;
-}
+
 .description-catalogue > p:nth-of-type(2) {
     color:#232628;
 }
@@ -571,15 +548,10 @@ footer > p:nth-of-type(1) {
 
 .tarif-catalogue {
     position: absolute;
-    top: -44px;
+    top: -81px;
     right: 0;
-    background-color: #6C98E1;
-    color: white;
 }
-a {
-    text-decoration: none;
-    color:#333537 ;
-}
+
 
 /* RIGHT COL SEARCH FORM */
 
@@ -686,17 +658,16 @@ a {
 
 /* ----- PAGE PRODUIT */
 
-.nav > ul {
+.nav-product > ul {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);   
     background-color: var(--black);
-    
     padding: 0;
     list-style: none;
     position: relative;
 }
-.nav > ul > li {
+.nav-product > ul > li {
     font-family: "Montserrat";
     font-size: 9px;
     font-weight: bold;
@@ -707,7 +678,7 @@ a {
     position: relative;
     top: -3px;
 }
-.nav > ul > li:first-of-type {
+.nav-product > ul > li:first-of-type {
     border-top: solid 4px var(--orange);
     background-color: var(--white);
     color: var(--black);
@@ -717,31 +688,22 @@ a {
     font-size: 8px;
     line-height: 14px;
 }
-.fiche-produit > h1 {
-    font-size: 15px;
-}
+
 .fiche-produit > p:first-of-type {
     font-family: "Montserrat";
     font-size: 12px;
     font-weight: 300;
     line-height: 15px;
 }
-.fiche-produit > p {
-    line-height: 15px; 
-    font-weight: 400;
-}
-.fiche-produit h6 + ul {
+
+.fiche-produit ul {
     list-style: none;
 }
 .fiche-produit h6 + ul > li{
     list-style-image: url(/projet/clubAuto/images/tick-mark.png);
-    font-size: 9px;
-    line-height: 20px;
-    padding-left: 15px;
 }
 .fiche-produit > div {
     color: grey;
-    line-height: 13px;
     border-left: solid 3pt var(--orange);
     padding-left: 40px;
     margin: 30px 0;
@@ -749,10 +711,7 @@ a {
 .fiche-produit {
     border-top: 1pt solid rgb(226, 223, 223);
 }
-.main-content-col {
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: repeat(auto);
+.page-content {
     margin: 40px 15px;
 }
 .fiche-produit > img {
@@ -763,22 +722,31 @@ a {
 @media screen and (min-width: 768px){
 
     .top-header-grid-container {
-        background-color: var(--black);
         display: flex;
         justify-content: space-between;
-        padding: 3% 7%;
+        padding: 3% 10%;
     }
-    .top-header-grid-container p {
-        font-size: 0.6em;
+    .top-header-grid-container div:first-child {
+        display: flex;
+        align-items: center;
+    }
+    .hide-mobile {
+        display:flex;
     }
     header #logo {
-        font-size: 1.4em;
+        margin-bottom: 0;
     }
     .header-main-image {
         background-image: url(/projet/clubAuto/images/vehicule1.jpg);
         background-size: cover;
         width: 100%;
         height: 600px;
+    }
+    .titre-header {
+        font-size: 8px;
+    }
+    .special-bold-header {
+        font-size: 10px;
     }
     .bottom-bar {
         position: relative;
@@ -792,9 +760,6 @@ a {
     } 
     .bottom-bar-link {
         display: flex;
-        font-family: "Montserrat";
-        font-size: 8px;
-        font-weight: bold;
         padding: 0 2%;
         height: 100%;
         align-items: center;
@@ -806,20 +771,12 @@ a {
     .bottom-bar-link:hover a {
         color: white;
     }
-    header #logo {
-        display: flex;
-    }
-    header div:first-child > div:nth-child(2) {
-        display: flex;
-    }
-    header div:first-child > div:nth-child(4) {
-        display:block;
-    }
-    header div:first-child > div:nth-child(5) {
-        display: flex;
+    #block.hide-mobile {
+        display: block;
     }
     #main-title {
         font-size: 1.5vw;
+        padding: 1% 10%;
     }
     main > section:first-child {
         position: relative;
@@ -831,24 +788,11 @@ a {
     }
     .flex-two-cols h3 {
         margin: 0;
-        font-size: 1vw;
-    }
-    .flex-two-cols h5 {
-        font-size: 0.6vw;
-    }
-    .flex-two-cols p {
-        font-size: 0.6vw;
-    }
-    .flex-two-cols li {
-        font-size: 0.7vw;
-        font-weight: 300;
-        line-height: 2em;
-        padding-left: 15px;
     }
     .image-background {
         flex-direction: row;
         gap: 2%;
-        padding: 4em;
+        padding: 10%;
     }
     .black-bg {
         display: flex;
@@ -894,6 +838,7 @@ a {
         height: fit-content;
         margin-left: 0;
         position: relative;
+        color: white;
     }
     .product-price p {
         margin: 0;
@@ -943,14 +888,17 @@ a {
         margin: 0 10%;
         padding: 2% 0;
     }
-    .main-footer h6 {
-        font-size: 9px;
+    .main-footer h5 {
     }
     #copy {
         margin-top: 2%;
         text-align: center;
     }
     /* PAGE LOCATION */
+
+    p.modele-catalogue {
+        margin-top: 0;
+    }
 
     .vente-location {
         display: grid;
@@ -1000,6 +948,43 @@ a {
     }
     .tri.filtre {
         margin: 1em 0 0;
+    }
+
+    /* PAGE CONTACT */
+    .contact-form {
+        margin: 150px 10% -150px;
+        padding: 0 10%;
+    }
+    .contact-form form {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto; 
+        grid-template-rows: auto;
+        column-gap: 30px;
+    }
+    .contact-form > form div:nth-child(3){
+        margin-top: 0;
+    }
+
+    /* PAGE VEHICULES DETAILS */
+    .page-content {
+        margin: 0 10%;
+    }
+    .fiche-produit {
+        width: 80%;
+    }
+    .nav > ul {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1064px){
+    #adress-header.hide-mobile {
+        display: none;
+    }
+}
+@media screen and (max-width: 1350px){
+    #block.hide-mobile {
+        display: none;
     }
 }
 

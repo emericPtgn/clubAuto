@@ -16,47 +16,45 @@
                 <div> 
                     <p id="logo">CLUB AUTO</p>
                 </div>
-                <div class="icone-header">
+                <div id="adress-header" class="hide-mobile">
                     <img src="/projet/clubAuto/images/icone-adresse.png">
-                    <div class="info-header">
-                        <p><span>ADRESSE :</span></p>
+                    <div>
+                        <p><span class="titre-header">ADRESSE :</span></p>
                         <p>AVENUE CHARLES DE GAULLE</p>
                         <p>75000 PARIS</p>
                     </div>
                 </div>
                 <div class="icone-header">
                     <img src="/projet/clubAuto/images/icon-telephone.png">
-                    <div class="info-header">
-                        <p><span>TÉLÉPHONE :</span></p>
-                        <p>01 23 45 67 89</p>
+                    <div>
+                        <p><span class="titre-header">TÉLÉPHONE :</span></p>
+                        <p class="special-bold-header">01 23 45 67 89</p>
                     </div>
                 </div>
-                <div class="info-header">
-                    <p><span>OUVERTURE :</span> Du Lundi au Samedi</p>
-                    <p><span>HORAIRES :</span> De 9h à 17h</p>
+                <div id="block" class="hide-mobile">
+                    <p class="special-bold-header"><span class="titre-header">OUVERTURE :</span> Du Lundi au Samedi</p>
+                    <p class="special-bold-header"><span class="titre-header">HORAIRES :</span> De 9h à 17h</p>
                 </div>
-                <div>
+                <div class="hide-mobile">
                     <img src="/projet/clubAuto/images/facebook.png">
                     <img src="/projet/clubAuto/images/twitter.png">
                 </div>
             </div> <!--Fin top header-->
-            <div class="header-main-image">
-                <nav class="bottom-bar">
-                    <ul class="bottom-bar-links">
-                        <li class="bottom-bar-link"><a href="index.html">ACCUEIL</a></li>
-                        <li class="bottom-bar-link"><a href="vente.html">VENTE</a></li>
-                        <li class="bottom-bar-link"><a href="location.html">LOCATION</a></li>
-                        <li class="bottom-bar-link"><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>
+            <nav class="bottom-bar">
+                <ul class="bottom-bar-links">
+                    <li class="bottom-bar-link"><a href="index.html">ACCUEIL</a></li>
+                    <li class="bottom-bar-link"><a href="vente.html">VENTE</a></li>
+                    <li class="bottom-bar-link"><a href="location.html">LOCATION</a></li>
+                    <li class="bottom-bar-link"><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
         </header>
-        <main class="main-content-col">
-            <div id="fil-ariane"><p>ACCUEIL / VENTE / BMW 535I, NAVI, LEATHER, ABS </p></div>
+        <main class="page-content">
+            <p id="fil-ariane">ACCUEIL / VENTE / BMW 535I, NAVI, LEATHER, ABS </p>
             <section class="fiche-produit">
-                <!--FIL ARIANE-->
                 <h1>BMW 535i, Navi, Leather, ABS</h1>
                 <img src="/projet/clubAuto/images/vehicule2.jpg">
-                <nav class="nav">
+                <nav class="nav-product">
                     <ul>
                         <li>DESCRIPTION</li>
                         <li>TECHNIQUE</li>
@@ -72,7 +70,7 @@
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, impedit optio. Hic illum nulla ab consequuntur modi quaerat provident obcaecati consectetur. Harum ducimus, quibusdam expedita optio repellendus ipsum voluptas sunt?</p>
                 <h6>OPTIONS</h6>
-                <ul>
+                <ul class="no-indent">
                     <li>Lorem ipsum dolor sit amet</li>
                     <li>Lorem ipsum dolor sit amet</li>
                     <li>Lorem ipsum dolor sit amet</li>
@@ -83,16 +81,16 @@
         <footer>
             <div class="main-footer">
                 <div>
-                    <h6><span>CLUB</span> AUTO</h6>
+                    <h5><span>CLUB</span> AUTO</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa perferendis recusandae temporibus, nisi quo consectetur! </p>
                 </div>
                 <div>
-                    <h6>HORAIRE D'OUVERTURE</h6>
+                    <h5>HORAIRE D'OUVERTURE</h5>
                     <p>lundi - Samedi : <span>09:00 - 17:00</span></p>
                     <p>Dimanche et jours fériés : <span>Fermé</span></p>
                 </div>
                 <div>
-                    <h6>NEWSLETTER</h6>
+                    <h5>NEWSLETTER</h5>
                     <form class="input-icone">
                         <input type="email" class="nl-form" placeholder="Entrez votre email" />
                         <img src="/projet/clubAuto/images/rss.png" class="nl-icone" alt="icone submit">
@@ -100,7 +98,7 @@
                     <p>Inscrivez-vous pour recevoir les dernières offres</p>
                 </div>
                 <div>
-                    <h6>RESEAUX SOCIAUX</h6>
+                    <h5>RESEAUX SOCIAUX</h5>
                     <img src="/projet/clubAuto/images/facebook.png">
                     <img src="/projet/clubAuto/images/twitter.png">
                     <img src="/projet/clubAuto/images/instagram-2.png">
