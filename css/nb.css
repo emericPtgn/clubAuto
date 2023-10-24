@@ -559,43 +559,22 @@ footer > p:nth-of-type(1) {
 }
 
 .modele-left-col {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-    " img-catalogue "
-    " description-catalogue "
-    " description-catalogue "
-    ;
-    margin-top: 10%;
-    padding-bottom: 10%;
-    border-bottom: solid 1pt rgb(222, 222, 222);
-    position: relative;
-}
-.img-catalogue {
-    grid-area: img-catalogue ;
-    width: 100%;
-    height: auto;
-    position: static;
 
 }
+.img-catalogue {
+    width: 100%;
+    object-fit: cover;
+}
 .description-catalogue {
-    grid-area: description-catalogue;
-    position: static;
+    position: relative;
 }
 
 .tarif-catalogue {
     position: absolute;
+    top: -44px;
     right: 0;
-    top: 46.3%;
-    z-index: 1;
-    color: var(--white);
-    font-weight: bold;
     background-color: #6C98E1;
-    font-family: "Montserrat";
-    font-size: 12px;
-    padding: 5px 15px 5px 40px;
-    margin: 0;
+    color: white;
 }
 a {
     text-decoration: none;
@@ -984,55 +963,33 @@ a {
         z-index: 3;
     }
     .left-col {
-        grid-area: left-col;
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
-        margin: 0 0 10%;
-        border-top: solid 1pt rgb(222, 222, 222);
-        width: fit-content;
+        margin: 0 0 20%;
+        row-gap: 3%;
     }
     .modele-left-col {
         display: grid;
-        grid-template-columns: 30% auto auto;
-        grid-template-rows: auto auto;
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px; 
         grid-template-areas:
-        " img-catalogue description-catalogue tarif-catalogue"
-        " img-catalogue description-catalogue ."
-        ;
-        column-gap: 50px;
-        margin-top: 0;
-        padding: 50px 0;
-        border-bottom: solid 1pt rgb(222, 222, 222);
-        width: 100%;
-        position: relative;
+          "img-catalogue description-catalogue"
+          " img-catalogue description-catalogue" 
+          ;
+        width: fit-content;
+        padding: 30px 0;
+        border-bottom: solid 1pt var(--grey);
     }
     .img-catalogue {
-        grid-area: img-catalogue ;
-        position:static;
-        width: 100%;
-        height: auto;
-    
+        grid-area: img-catalogue; 
     }
     .description-catalogue {
         grid-area: description-catalogue;
-        position: relative;
-        width: fit-content;
     }
     .tarif-catalogue {
-        grid-area: tarif-catalogue;
-        position: relative;
-        right: 0;
-        top: 0;
-        z-index: 1;
-        color: var(--white);
-        font-weight: bold;
-        background-color: #6C98E1;
-        font-family: "Montserrat";
-        font-size: 12px;
-        padding: 10px 15px 15px 40px;
-        margin: 0;
-        height: fit-content;
+        position: static;
+        float: right;
     }
     .vente-location h5 {
         margin: 0;
